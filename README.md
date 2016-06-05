@@ -7,6 +7,7 @@
 * Added `ؤ` (U+0624 ARABIC LETTER WAW WITH HAMZA ABOVE) at `AltGr`+`W`
 * Added `ۂ` (U+06C2 ARABIC LETTER HEH GOAL WITH HAMZA ABOVE) at `AltGr`+`O`
 * Added `أ` (U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE) at `AltGr`+`A`
+* Added `؍` (U+060D ARABIC DATE SEPARATOR) at `Shift` + `,`
 * Added `ZWNJ` (U+200C ZERO WIDTH NON-JOINER) at `Shift`+`Space`
 * Added `ZWJ` (U+200D ZERO WIDTH JOINER) at `AltGr`+`|`
 * Added `RLM` (U+200F RIGHT-TO-LEFT MARK) at `AltGr`+`}`

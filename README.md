@@ -23,7 +23,7 @@
 
 ### Windows
 
-[MSKLC file](win/navees.klc). Please read the respective [README](README.md).
+[MSKLC file](win/navees.klc). Please read the respective [README](win/README.md).
 
 ## Meta
 

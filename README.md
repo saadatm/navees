@@ -19,12 +19,6 @@
 * Moved `؂` (U+0602 ARABIC FOOTNOTE MARKER) from `AltGr`+`W` to `AltGr`+`F`
 * Removed `ﷲ` (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) from `AltGr`+`A`
 
-Please see the website for more documentation.
-
-## Installation
-
-### Windows
-
 ## Source
 
 ### Windows

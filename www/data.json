@@ -1,0 +1,173 @@
+{
+  "base": {
+	"rows": [[
+	  { "label": "`", "val": "`" },
+	  { "label": "1", "val": "۱" },
+	  { "label": "2", "val": "۲" },
+	  { "label": "3", "val": "۳" },
+	  { "label": "4", "val": "۴" },
+	  { "label": "5", "val": "۵" },
+	  { "label": "6", "val": "۶" },
+	  { "label": "7", "val": "۷" },
+	  { "label": "8", "val": "۸" },
+	  { "label": "9", "val": "۹" },
+	  { "label": "0", "val": "۰" },
+	  { "label": "-", "val": "-" },
+	  { "label": "=", "val": "=", "class": "override-font" }
+	],
+	[
+	  { "label": "Q", "val": "ق" },
+	  { "label": "W", "val": "و" },
+	  { "label": "E", "val": "ع" },
+	  { "label": "R", "val": "ر" },
+	  { "label": "T", "val": "ت" },
+	  { "label": "Y", "val": "ے" },
+	  { "label": "U", "val": "ء" },
+	  { "label": "I", "val": "ی" },
+	  { "label": "O", "val": "ہ" },
+	  { "label": "P", "val": "پ" },
+	  { "label": "[", "val": "[", "class": "override-font" },
+	  { "label": "]", "val": "]", "class": "override-font" },
+	  { "label": "\\", "val": "\\", "class": "backslash" }
+	],
+	[
+	  { "label": "A", "val": "ا" },
+	  { "label": "S", "val": "س" },
+	  { "label": "D", "val": "د" },
+	  { "label": "F", "val": "ف" },
+	  { "label": "G", "val": "گ" },
+	  { "label": "H", "val": "ح" },
+	  { "label": "J", "val": "ج" },
+	  { "label": "K", "val": "ک" },
+	  { "label": "L", "val": "ل" },
+	  { "label": ";", "val": "؛" },
+	  { "label": "'", "val": "'" }
+	],
+	[
+	  { "label": "Z", "val": "ز" },
+	  { "label": "X", "val": "ش" },
+	  { "label": "C", "val": "چ" },
+	  { "label": "V", "val": "ط" },
+	  { "label": "B", "val": "ب" },
+	  { "label": "N", "val": "ن" },
+	  { "label": "M", "val": "م" },
+	  { "label": ",", "val": "،" },
+	  { "label": ".", "val": "۔" },
+	  { "label": "/", "val": "/" }
+	]]
+  },
+  "shift": {
+	"rows": [[
+	  { "label": "~", "val": "ً", "altval": "دو زبر", "class": "larger", "type": "combining-mark" },
+	  { "label": "1", "val": "1" },
+	  { "label": "2", "val": "2" },
+	  { "label": "3", "val": "3" },
+	  { "label": "4", "val": "4" },
+	  { "label": "5", "val": "5" },
+	  { "label": "6", "val": "6" },
+	  { "label": "7", "val": "7" },
+	  { "label": "8", "val": "8" },
+	  { "label": "9", "val": "9" },
+	  { "label": "0", "val": "0" },
+	  { "label": "_", "val": "_" },
+	  { "label": "+", "val": "+" }
+	],
+	[
+	  { "label": "Q", "val": "ْ", "altval": "جزم", "class": "larger", "type": "combining-mark" },
+	  { "label": "W", "val": "ّ", "altval": "تشدید", "class": "larger", "type": "combining-mark" },
+	  { "label": "E", "val": "ٰ", "altval": "کھڑی زبر", "class": "larger", "type": "combining-mark" },
+	  { "label": "R", "val": "ڑ" },
+	  { "label": "T", "val": "ٹ" },
+	  { "label": "Y", "val": "َ", "altval": "زبر", "class": "larger", "type": "combining-mark" },
+	  { "label": "U", "val": "ئ" },
+	  { "label": "I", "val": "ِ", "altval": "زیر", "class": "larger", "type": "combining-mark" },
+	  { "label": "O", "val": "ۃ" },
+	  { "label": "P", "val": "ُ", "altval": "پیش", "class": "larger", "type": "combining-mark" },
+	  { "label": "{", "val": "{" },
+	  { "label": "}", "val": "}" },
+	  { "label": "|", "val": "|" }
+	],
+	[
+	  { "label": "A", "val": "آ" },
+	  { "label": "S", "val": "ص" },
+	  { "label": "D", "val": "ڈ" },
+	  { "label": "F", "val": "" },
+	  { "label": "G", "val": "غ" },
+	  { "label": "H", "val": "ھ" },
+	  { "label": "J", "val": "ض" },
+	  { "label": "K", "val": "خ" },
+	  { "label": "L", "val": "" },
+	  { "label": ":", "val": ":" },
+	  { "label": "\"", "val": "\"" }
+	],
+	[
+	  { "label": "Z", "val": "ذ" },
+	  { "label": "X", "val": "ژ" },
+	  { "label": "C", "val": "ث" },
+	  { "label": "V", "val": "ظ" },
+	  { "label": "B", "val": "" },
+	  { "label": "N", "val": "ں" },
+	  { "label": "M", "val": "٘", "altval": "علامتِ نون غنہ", "class": "larger", "type": "combining-mark" },
+	  { "label": ",", "val": "؍" },
+	  { "label": ".", "val": "٫" },
+	  { "label": "?", "val": "؟" }
+	]]
+  },
+  "altgr": {
+	"rows": [[
+	  { "label": "~", "val": "~" },
+	  { "label": "!", "val": "!" },
+	  { "label": "@", "val": "@" },
+	  { "label": "#", "val": "#" },
+	  { "label": "$", "val": "$" },
+	  { "label": "%", "val": "٪" },
+	  { "label": "^", "val": "^" },
+	  { "label": "&", "val": "&" },
+	  { "label": "*", "val": "*" },
+	  { "label": "(", "val": "(" },
+	  { "label": ")", "val": ")" },
+	  { "label": "-", "val": "" },
+	  { "label": "+", "val": "" }
+	],
+	[
+	  { "label": "Q", "val": "" },
+	  { "label": "W", "val": "ؤ" },
+	  { "label": "E", "val": "ٖ", "altval": "کھڑی زیر", "class": "larger", "type": "combining-mark" },
+	  { "label": "R", "val": "ؓ", "altval": "علامتِ رضی اللہ عنہ", "class": "larger", "type": "combining-mark" },
+	  { "label": "T", "val": "ؔ", "altval": "علامتِ تخلص", "class": "larger", "type": "combining-mark" },
+	  { "label": "Y", "val": "؁", "altval": "علامتِ سنہ", "type": "sign" },
+	  { "label": "U", "val": "ٔ", "altval": "بالائی ہمزہ", "class": "larger", "type": "combining-mark" },
+	  { "label": "I", "val": "ؑ", "altval": "علامتِ علیہ السلام", "class": "larger", "type": "combining-mark" },
+	  { "label": "O", "val": "ۂ" },
+	  { "label": "P", "val": "ٗ", "altval": "الٹا پیش", "class": "larger", "type": "combining-mark" },
+	  { "label": "{", "val": "LRM", "class": "smaller" },
+	  { "label": "}", "val": "RLM", "class": "smaller" },
+	  { "label": "|", "val": "ZWJ", "class": "smaller" }
+	],
+	[
+	  { "label": "A", "val": "أ" },
+	  { "label": "S", "val": "ؐ", "altval": "علامتِ صلی اللہ علیہ وسلم", "class": "larger", "type": "combining-mark" },
+	  { "label": "D", "val": "ﷺ", "class": "smaller" },
+	  { "label": "F", "val": "؂", "altval": "علامتِ حاشیہ", "type": "sign" },
+	  { "label": "G", "val": "" },
+	  { "label": "H", "val": "ؒ", "altval": "علامتِ رحمۃ اللہ علیہ", "class": "larger", "type": "combining-mark" },
+	  { "label": "J", "val": "ﷻ", "class": "smaller" },
+	  { "label": "K", "val": "" },
+	  { "label": "L", "val": "" },
+	  { "label": ";", "val": "" },
+	  { "label": "'", "val": "" }
+	],
+	[
+	  { "label": "Z", "val": "؏", "altval": "علامتِ مصرعہ", "type": "sign" },
+	  { "label": "X", "val": "؎", "altval": "علامتِ شعر", "type": "sign" },
+	  { "label": "C", "val": "؃", "altval": "علامتِ صفحہ", "type": "sign" },
+	  { "label": "V", "val": "" },
+	  { "label": "B", "val": "﷽", "class": "smaller" },
+	  { "label": "N", "val": "؀", "altval": "علامتِ ہندسہ", "type": "sign" },
+	  { "label": "M", "val": "" },
+	  { "label": "<", "val": "<" },
+	  { "label": ">", "val": ">" },
+	  { "label": "?", "val": "" }
+	]]
+  }
+}

@@ -1,0 +1,105 @@
+{% import 'helpers/_macros.njk' as hlp %}
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Navees - a phonetic keyboard layout for Urdu</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<header>
+		<a class="head-link" href="http://saadatm.github.io/navees">
+		<h1 class="swsh">Navees</h1>
+		<p>A phonetic keyboard layout for Urdu</p>
+		</a>
+		
+		<nav class="no-print">
+			<ul>
+				<li><a href="#install">Install</a></li>
+				<li><a href="#doc">Documentation</a></li>
+				<li><a href="https://github.com/saadatm/navees">GitHub</a></li>
+				<li><a href="/ur"><span class="ur" lang="ur">اردو</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- <section>
+		<p><strong>Navees</strong> is a phonetic keyboard layout for Urdu, based on the <a href="http://cle.org.pk/software/localization/keyboards/CRULPphonetickbv1.1.html">CRULP Phonetic Keyboard v1.1</a>.</p>
+	</section> -->
+	
+	<section class="max">
+	{{ hlp.drawKB(base, 'Base') }}
+	{{ hlp.drawKB(shift, 'Shift') }}
+	{{ hlp.drawKB(altgr, 'AltGr') }}
+	</section>
+	
+	<section id="install" class="no-print">
+		<h1>Install</h1>
+		<h2>Windows</h2>
+		<ol>
+			<li><a href="#">Download</a> the installer.</li>
+			<li>Unzip the installer, go inside the folder <b>navees</b>, and run <b>setup.exe</b>. The system will display a confirmation message after successful installation.</li>
+			<li>A little button saying <strong class="all-sc">EN</strong> (or <strong class="all-sc">ENG</strong>) will appear on the taskbar (near the system tray/status area). Click it, and select <strong class="all-sc">UR</strong> (or <strong class="all-sc">URD</strong>).</li>
+			<li>Type!</li>
+		</ol>
+	</section>
+	
+	<section id="doc" class="doc">
+		<h1 class="no-print">Documentation</h1>
+		<p class="no-print"><span class="swsh">Navees</span> is based on the <a href="http://cle.org.pk/software/localization/keyboards/CRULPphonetickbv1.1.html">CRULP Phonetic Keyboard v1.1</a> with the following changes:</p>
+		<ul class="ul no-print">
+			<li>Added <strong class="ur">ؤ</strong> <span class="char-desc fade all-sc">(U+0624 ARABIC LETTER WAW WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>W</kbd></li>
+			<li>Added <strong class="ur">ۂ</strong> <span class="char-desc fade all-sc">(U+06C2 ARABIC LETTER HEH GOAL WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>O</kbd></li>
+			<li>Added <strong class="ur">أ</strong> <span class="char-desc fade all-sc">(U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>A</kbd></li>
+			<li>Added <strong class="ur">؍</strong> <span class="char-desc fade all-sc">(U+060D ARABIC DATE SEPARATOR)</span> at <kbd>Shift</kbd> <span class="fade">+</span> <kbd>,</kbd></li>
+			<li>Added <strong><a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">ZWNJ</a></strong> <span class="char-desc fade all-sc">(U+200C ZERO WIDTH NON-JOINER)</span> at <kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></li>
+			<li>Added <strong><a href="https://en.wikipedia.org/wiki/Zero-width_joiner">ZWJ</a></strong> <span class="char-desc fade all-sc">(U+200D ZERO WIDTH JOINER)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>|</kbd></li>
+			<li>Added <strong><a href="https://en.wikipedia.org/wiki/Right-to-left_mark">RLM</a></strong> <span class="char-desc fade all-sc">(U+200F RIGHT-TO-LEFT MARK)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>}</kbd></li>
+			<li>Added <strong><a href="https://en.wikipedia.org/wiki/Left-to-right_mark">LRM</a></strong> <span class="char-desc fade all-sc">(U+200E LEFT-TO-RIGHT MARK)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>{</kbd></li>
+			<li>Added <strong>`</strong> <span class="char-desc fade all-sc">(U+0060 GRAVE ACCENT)</span> at <kbd>`</kbd></li>
+			<li>Added <strong>~</strong> <span class="char-desc fade all-sc">(U+007E TILDE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>~</kbd></li>
+			<li>Added <strong>$</strong> <span class="char-desc fade all-sc">(U+0024 DOLLAR SIGN)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>$</kbd></li>
+			<li>Added <strong>^</strong> <span class="char-desc fade all-sc">(U+005E CIRCUMFLEX ACCENT)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>^</kbd></li>
+			<li>Moved <strong class="ur">؂</strong> <span class="char-desc fade all-sc">(U+0602 ARABIC FOOTNOTE MARKER)</span> from <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>W</kbd> to <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>F</kbd></li>
+			<li>Removed the ligature <strong class="ur">ﷲ</strong> <span class="char-desc fade all-sc">(U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM)</span> from <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>A</kbd></li>
+		</ul>
+		<h2>Mappings</h2>
+		<p>The following tables list the mappings of <span class="swsh">Navees</span>, grouped into various categories.</p>
+		<div class="mapping-table">
+			<h3>Alphabets</h3>
+			{{ hlp.drawTable(char_categories.alphabets, base, shift, altgr, 'Alphabets') }}
+		</div>
+		<div class="mapping-table">
+			<h3>Digits</h3>
+			{{ hlp.drawTable(char_categories.digits, base, shift, altgr, 'Digits') }}
+		</div>
+		<div class="mapping-table">
+			<h3>Diacritics</h3>
+			{{ hlp.drawTable(char_categories.diacritics, base, shift, altgr, 'Diacritics') }}
+		</div>
+		<div class="mapping-table">
+			<h3>Punctuation</h3>
+			{{ hlp.drawTable(char_categories.punctuation, base, shift, altgr, 'Punctuation') }}
+		</div>
+		<div class="mapping-table">
+			<h3>Honorifics</h3>
+			{{ hlp.drawTable(char_categories.honorifics, base, shift, altgr, 'Honorifics') }}
+		</div>
+		<div class="mapping-table">
+			<h3>Miscellaenous</h3>
+			{{ hlp.drawTable(char_categories.misc, base, shift, altgr, 'Miscellaneous') }}
+		</div>
+	</section>
+	
+	<footer class="no-print">
+		<p>By Saadat Mateen (<a href="http://saadatmand.pk/">Website</a> | <a href="https://twitter.com/saadatm">Twitter</a>)</p>
+		<p>Released under: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="all-sc">CC BY-SA 4.0</a> (content of this website), and <a rel="license" href="https://opensource.org/licenses/MIT" class="all-sc">MIT</a> (underlying code).</p>
+	</footer>
+	</body>
+</html>

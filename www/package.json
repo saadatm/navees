@@ -1,0 +1,17 @@
+{
+  "name": "navees",
+  "version": "1.0.0",
+  "description": "A phonetic keyboard layout for Urdu",
+  "author": "Saadat Mateen",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-prettify": "^0.4.0",
+    "postcss-import": "^8.1.2"
+  },
+  "dependencies": {}
+}

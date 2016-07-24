@@ -1,0 +1,101 @@
+{% import 'helpers/_macros.njk' as hlp %}
+<!doctype html>
+
+<html lang="ur" dir="rtl">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>نویس - اردو کے لیے ایک صوتی کی‌بورڈ</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style-ur.css" />
+</head>
+
+<body>
+	<header>
+		<a class="head-link" href="http://saadatm.github.io/navees">
+			<h1 class="swsh">نویس</h1>
+			<p>اردو کے لیے ایک صوتی کی‌بورڈ لےآؤٹ</p>
+		</a>
+		
+		<nav class="no-print">
+			<ul>
+				<li><a href="#install">تنصیب</a></li>
+				<li><a href="#doc">ڈاکیومینٹیشن</a></li>
+				<li><a href="https://github.com/saadatm/navees">گِٹ‌ہب</a></li>
+				<li><a href="/"><span class="en all-sc" lang="en">English</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="max">
+	{{ hlp.drawKB(base, 'بنیادی') }}
+	{{ hlp.drawKB(shift, 'شِفٹ') }}
+	{{ hlp.drawKB(altgr, 'آلٹ‌جی‌آر') }}
+	</section>
+	
+	<section id="install" class="no-print">
+		<h1>تنصیب</h1>
+		<h2>وِنڈوز</h2>
+		<ol>
+			<li>انسٹالر <a href="#">ڈاؤنلوڈ</a> کریں۔</li>
+			<li>انسٹالر کو اَن زِپ کریں، <b class="en" lang="en">navees</b> نامی فولڈر میں جائیں، اور <b class="en" lang="en">setup.exe</b> کو چلائیں۔ کامیاب تنصیب کے بعد سسٹم ایک تصدیقی پیغام ظاہر کرے گا۔</li>
+			<li>ٹاسک‌بار میں (سسٹم ٹرے/سٹیٹس ایریا کے ساتھ) ایک ننھا سا بٹن نمودار ہو گا، جس پر <strong lang="en" class="en all-sc">EN</strong> (یا <strong lang="en" class="en all-sc">ENG</strong>) لکھا ہو گا۔ اس بٹن کو کلک کریں، اور <strong lang="en" class="en all-sc">UR</strong> (یا <strong lang="en" class="en all-sc">URD</strong>) کو منتخب کریں۔</li>
+			<li>ٹائپ کریں!</li>
+		</ol>
+	</section>
+	
+	<section id="doc" class="doc">
+		<h1 class="no-print">ڈاکیومینٹیشن</h1>
+		<p class="no-print">نویس کی بنیاد <a href="http://cle.org.pk/software/localization/keyboards/CRULPphonetickbv1.1.html">کرلپ کا صوتی کی‌بورڈ <span lang="en" class="en">(v1.1)</span></a> ہے جس میں درج ذیل تبدیلیاں کی گئی ہیں:</p>
+		<ul class="ul no-print">
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">W</kbd>&lrm; پر <strong>ؤ</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+0624 ARABIC LETTER WAW WITH HAMZA ABOVE)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">O</kbd>&lrm; پر <strong>ۂ</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+06C2 ARABIC LETTER HEH GOAL WITH HAMZA ABOVE)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">A</kbd>&lrm; پر <strong>أ</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">Shift</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">,</kbd>&lrm; پر <strong>؍</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+060D ARABIC DATE SEPARATOR)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">Shift</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">Space</kbd>&lrm; پر <strong class="en"><a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">ZWNJ</a></strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+200C ZERO WIDTH NON-JOINER)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">|</kbd>&lrm; پر <strong class="en"><a href="https://en.wikipedia.org/wiki/Zero-width_joiner">ZWJ</a></strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+200D ZERO WIDTH JOINER)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">}</kbd>&lrm; پر <strong class="en"><a href="https://en.wikipedia.org/wiki/Right-to-left_mark">RLM</a></strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+200F RIGHT-TO-LEFT MARK)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">{</kbd>&lrm; پر <strong class="en"><a href="https://en.wikipedia.org/wiki/Left-to-right_mark">LRM</a></strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+200E LEFT-TO-RIGHT MARK)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">`</kbd> پر &lrm;<strong class="en">`</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+0060 GRAVE ACCENT)</span> کا اضافہ </li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">~</kbd>&lrm; پر <strong class="en">~</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+007E TILDE)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">$</kbd>&lrm; پر <strong class="en">$</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+0024 DOLLAR SIGN)</span> کا اضافہ</li>
+			<li>&lrm;<kbd dir="ltr" class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" dir="ltr" lang="en">^</kbd>&lrm; پر <strong class="en">^</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+005E CIRCUMFLEX ACCENT)</span> کا اضافہ</li>
+			<li><strong>؂</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+0602 ARABIC FOOTNOTE MARKER)</span> کی <kbd class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" lang="en">W</kbd> سے <kbd class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" lang="en">F</kbd> پر منتقلی</li>
+			<li>لگیچر <strong>ﷲ</strong> <span lang="en" dir="ltr" class="en char-desc fade all-sc">(U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM)</span> کو <kbd class="en" lang="en">AltGr</kbd> <span class="fade">+</span> <kbd class="en" lang="en">A</kbd> سے ہٹایا گیا</li>
+		</ul>
+		<h2>میپِنگز</h2>
+		<p>درج ذیل ٹیبلز میں نویس کی تمام میپِنگز ظاہر کی گئی ہیں:</p>
+		<div class="mapping-table">
+			<h3>حروفِ تہجی</h3>
+			{{ hlp.drawTable(char_categories.alphabets, base, shift, altgr, 'Alphabets') }}
+		</div>
+		<div class="mapping-table">
+			<h3>اعداد</h3>
+			{{ hlp.drawTable(char_categories.digits, base, shift, altgr, 'Digits') }}
+		</div>
+		<div class="mapping-table">
+			<h3>اعراب</h3>
+			{{ hlp.drawTable(char_categories.diacritics, base, shift, altgr, 'Diacritics') }}
+		</div>
+		<div class="mapping-table">
+			<h3>رموزِ اوقاف</h3>
+			{{ hlp.drawTable(char_categories.punctuation, base, shift, altgr, 'Punctuation') }}
+		</div>
+		<div class="mapping-table">
+			<h3>علاماتِ تکریم</h3>
+			{{ hlp.drawTable(char_categories.honorifics, base, shift, altgr, 'Honorifics') }}
+		</div>
+		<div class="mapping-table">
+			<h3>متفرق</h3>
+			{{ hlp.drawTable(char_categories.misc, base, shift, altgr, 'Miscellaneous') }}
+		</div>
+	</section>
+	
+	<footer class="no-print">
+		<p>منجانب سعادت متین (<a href="http://saadatmand.pk/">ویب‌سائٹ</a> <span class="fade">|</span> <a href="https://twitter.com/saadatm">ٹوئٹر</a>)</p>
+		<p>اس ویب‌سائٹ کا متن <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" lang="en" class="en all-sc">CC BY-SA 4.0</a>، اور تمام کوڈ <a rel="license" href="https://opensource.org/licenses/MIT" lang="en" class="en all-sc">MIT</a> لائسنسز کے تحت جاری کیا گیا۔</p>
+	</footer>
+	</body>
+</html>

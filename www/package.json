@@ -1,7 +1,7 @@
 {
-  "name": "navees",
+  "name": "navees-www",
   "version": "1.0.0",
-  "description": "A phonetic keyboard layout for Urdu",
+  "description": "Website for Navees, a phonetic keyboard layout for Urdu",
   "author": "Saadat Mateen",
   "license": "MIT",
   "devDependencies": {

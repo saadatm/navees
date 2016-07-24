@@ -48,7 +48,6 @@ gulp.task('fonts', function() {
 		.pipe(gulp.dest(DEST + '/assets/type'));
 });
 
-// Screen CSS
 gulp.task('css', function() {
 	var processors = [
 		cssimport(),
@@ -61,13 +60,5 @@ gulp.task('css', function() {
 		.pipe(postcss(processors))
 		.pipe(gulp.dest(DEST + '/assets/css'));
 });
-
-// Print CSS
-//gulp.task('cssp', function() {
-//	return gulp.src(SRC + '/assets/css/print*.css')
-//		.pipe(gulp.dest(DEST + '/assets/css'));
-//});
-//
-//gulp.task('css', ['csss', 'cssp']);
 
 gulp.task('default', ['css', 'fonts', 'pages']);

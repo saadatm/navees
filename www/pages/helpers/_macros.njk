@@ -1,119 +1,119 @@
 {% macro drawLeftMiscKeys(rowNum, label) %}
-	{% if rowNum == 1 %} {# tab #}
-		<div class="key tab other"><span class="label">Tab</span></div>
-	{% elif rowNum == 2 %} {# caps lock #}
-		<div class="key capslock other"><span class="label">Caps Lock</span></div>
-	{% elif rowNum == 3 %} {# left shift #}
-		{% if label == 'Shift' or label == 'شِفٹ' %}
-		<div class="key lshift other highlighted"><span class="label">Shift</span></div>
-		{% else %}
-		<div class="key lshift other"><span class="label">Shift</span></div>
-		{% endif %}
-	{% endif %}
+    {% if rowNum == 1 %} {# tab #}
+        <div class="key tab other"><span class="label">Tab</span></div>
+    {% elif rowNum == 2 %} {# caps lock #}
+        <div class="key capslock other"><span class="label">Caps Lock</span></div>
+    {% elif rowNum == 3 %} {# left shift #}
+        {% if label == 'Shift' or label == 'شِفٹ' %}
+        <div class="key lshift other highlighted"><span class="label">Shift</span></div>
+        {% else %}
+        <div class="key lshift other"><span class="label">Shift</span></div>
+        {% endif %}
+    {% endif %}
 {% endmacro %}
 
 {% macro drawRightMiscKeys(rowNum, label) %}
-	{% if rowNum == 0 %} {# backspace #}
-		<div class="key backspace other"><span class="label">Back&shy;space</span></div>
-	{% elif rowNum == 2 %} {# enter #}
-		<div class="key return other"><span class="label">Enter</span></div>
-	{% elif rowNum == 3 %} {# right shift #}
-		{% if label == 'Shift' or label == 'شِفٹ' %}
-		<div class="key rshift other highlighted"><span class="label">Shift</span></div>
-		{% else %}
-		<div class="key rshift other"><span class="label">Shift</span></div>
-		{% endif %}
-	{% endif %}
+    {% if rowNum == 0 %} {# backspace #}
+        <div class="key backspace other"><span class="label">Back&shy;space</span></div>
+    {% elif rowNum == 2 %} {# enter #}
+        <div class="key return other"><span class="label">Enter</span></div>
+    {% elif rowNum == 3 %} {# right shift #}
+        {% if label == 'Shift' or label == 'شِفٹ' %}
+        <div class="key rshift other highlighted"><span class="label">Shift</span></div>
+        {% else %}
+        <div class="key rshift other"><span class="label">Shift</span></div>
+        {% endif %}
+    {% endif %}
 {% endmacro %}
 
 {% macro drawLastRow(label) %}
 <div class="row last">
-	<div class="key ctrl other"><span class="label">Ctrl</span></div>
-	<div class="key-group other">
-		<div class="key alt other"><span class="label">Alt</span></div>
-		{% if label == 'Shift' or label == 'شِفٹ' %}
-		<div class="key space other special"><span class="val">ZWNJ</span></div>
-		{% else %}
-		<div class="key space other"><span class="val">وقفہ</span></div>
-		{% endif %}
-		{% if label == 'AltGr' or label == 'آلٹ‌جی‌آر' %}
-		<div class="key alt other highlighted"><span class="label">AltGr</span></div>
-		{% else %}
-		<div class="key alt other"><span class="label">AltGr</span></div>
-		{% endif %}
-	</div>
-	<div class="key ctrl other"><span class="label">Ctrl</span></div>
+    <div class="key ctrl other"><span class="label">Ctrl</span></div>
+    <div class="key-group other">
+        <div class="key alt other"><span class="label">Alt</span></div>
+        {% if label == 'Shift' or label == 'شِفٹ' %}
+        <div class="key space other special"><span class="val">ZWNJ</span></div>
+        {% else %}
+        <div class="key space other"><span class="val">وقفہ</span></div>
+        {% endif %}
+        {% if label == 'AltGr' or label == 'آلٹ‌جی‌آر' %}
+        <div class="key alt other highlighted"><span class="label">AltGr</span></div>
+        {% else %}
+        <div class="key alt other"><span class="label">AltGr</span></div>
+        {% endif %}
+    </div>
+    <div class="key ctrl other"><span class="label">Ctrl</span></div>
 </div>
 {% endmacro %}
 
 {% macro drawRow(row, rowNum, label) %}
 <div class="row" dir="ltr">
-	{{ drawLeftMiscKeys(rowNum, label) }}
-	{%- for key in row -%}
-	<div class="key {{ key.class }}">
-		{%- if key.type == 'combining-mark' -%}
-		<span class="val">&#9676;{{ key.val }}</span>
-		{%- else -%}
-		<span class="val">{{ key.val }}</span>
-		{%- endif -%}
-		<span class="label">{{ key.label }}</span>
-	</div>
-	{%- endfor -%}
-	{{ drawRightMiscKeys(rowNum, label) }}
+    {{ drawLeftMiscKeys(rowNum, label) }}
+    {%- for key in row -%}
+    <div class="key {{ key.class }}">
+        {%- if key.type == 'combining-mark' -%}
+        <span class="val">&#9676;{{ key.val }}</span>
+        {%- else -%}
+        <span class="val">{{ key.val }}</span>
+        {%- endif -%}
+        <span class="label">{{ key.label }}</span>
+    </div>
+    {%- endfor -%}
+    {{ drawRightMiscKeys(rowNum, label) }}
 </div>
 {% endmacro %}
 
 {% macro drawKB(state, label) %}
 <div class="keyboard">
-	<h1>{{ label }}</h1>
-	
-	{% for row in state.rows %}
-		{{ drawRow(row, loop.index0, label) }}
-	{% endfor %}
-	{{ drawLastRow(label) }}
+    <h1>{{ label }}</h1>
+    
+    {% for row in state.rows %}
+        {{ drawRow(row, loop.index0, label) }}
+    {% endfor %}
+    {{ drawLastRow(label) }}
 </div>
 {% endmacro %}
 
 {% macro findMapping(c, map, prefix) %}
-	{# Oddly, there's no way to break out of a loop in Nunjucks, yet.
-	   So we'll have to go through all iterations, even after finding the c.
-	#}
-	{% for row in map.rows %}
-		{% for key in row %}
-			{% if key.val == c %}
-				<tr>
-					<td>{% if prefix != '' %}<kbd>{{ prefix }}</kbd> <span class="fade">+</span> {% endif %}<kbd>{{ key.label }}</kbd></td>
-					<td {% if key.altval -%}dir="rtl"{%- endif -%}{%- if key.class -%} class="{{ key.class }}"{%- endif -%}>
-						{%- if key.type == 'combining-mark' -%}
-							{{ key.altval}} <span class="fade">&mdash;</span> &#9676;{{ key.val }}
-						{%- elif key.type == 'sign' -%}
-							{{ key.altval}} <span class="fade">&mdash;</span> {{ key.val }}
-						{%- else -%}
-							{{ key.val}}
-						{%- endif -%}
-					</td></tr>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
+    {# Oddly, there's no way to break out of a loop in Nunjucks, yet.
+       So we'll have to go through all iterations, even after finding the c.
+    #}
+    {% for row in map.rows %}
+        {% for key in row %}
+            {% if key.val == c %}
+                <tr>
+                    <td>{% if prefix != '' %}<kbd>{{ prefix }}</kbd> <span class="fade">+</span> {% endif %}<kbd>{{ key.label }}</kbd></td>
+                    <td {% if key.altval -%}dir="rtl"{%- endif -%}{%- if key.class -%} class="{{ key.class }}"{%- endif -%}>
+                        {%- if key.type == 'combining-mark' -%}
+                            {{ key.altval}} <span class="fade">&mdash;</span> &#9676;{{ key.val }}
+                        {%- elif key.type == 'sign' -%}
+                            {{ key.altval}} <span class="fade">&mdash;</span> {{ key.val }}
+                        {%- else -%}
+                            {{ key.val}}
+                        {%- endif -%}
+                    </td></tr>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
 {% endmacro %}
 
 {% macro drawTable(chars, base, shift, altgr, heading) %}
-	<table dir="ltr">
-		{% for c in chars | split %}
-			{% if c == 'ZWNJ' %}
-			<tr>
-				<td><kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></td>
-				<td class="smaller">ZWNJ</td>
-			</tr>
-			{% else %}
-			{# Below is a wasteful way of doing things (because even if we find the c in the
-			   first macro call, we will _still_ be calling the 2nd and 3rd macros. I am sure
-			   there's a better way of doing this, but I can't be bothered right now.
-			#}
-			{{ findMapping(c, base, '') }}
-			{{ findMapping(c, shift, 'Shift') }}
-			{{ findMapping(c, altgr, 'AltGr') }}
-			{% endif %}
-		{% endfor %}
-	</table>
+    <table dir="ltr">
+        {% for c in chars | split %}
+            {% if c == 'ZWNJ' %}
+            <tr>
+                <td><kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></td>
+                <td class="smaller">ZWNJ</td>
+            </tr>
+            {% else %}
+            {# Below is a wasteful way of doing things (because even if we find the c in the
+               first macro call, we will _still_ be calling the 2nd and 3rd macros. I am sure
+               there's a better way of doing this, but I can't be bothered right now.
+            #}
+            {{ findMapping(c, base, '') }}
+            {{ findMapping(c, shift, 'Shift') }}
+            {{ findMapping(c, altgr, 'AltGr') }}
+            {% endif %}
+        {% endfor %}
+    </table>
 {% endmacro %}

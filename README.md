@@ -1,6 +1,6 @@
 # Navees
 
-*Navees* is a keyboard layout for Urdu, based on the [CRULP Urdu Phonetic Keyboard Layout v1.1](http://cle.org.pk/software/localization/keyboards/CRULPphonetickbv1.1.html).
+_Navees_ is a keyboard layout for Urdu, based on the [CRULP Urdu Phonetic Keyboard Layout v1.1](http://cle.org.pk/software/localization/keyboards/CRULPphonetickbv1.1.html).
 
 ## Changes from the CRULP layout
 

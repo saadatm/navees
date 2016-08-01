@@ -85,7 +85,7 @@
       { "label": "P", "val": "ُ", "altval": "پیش", "class": "larger", "type": "combining-mark" },
       { "label": "{", "val": "{" },
       { "label": "}", "val": "}" },
-      { "label": "|", "val": "|" }
+      { "label": "|", "val": "|", "class": "backslash" }
     ],
     [
       { "label": "A", "val": "آ" },
@@ -142,7 +142,7 @@
       { "label": "P", "val": "ٗ", "altval": "الٹا پیش", "class": "larger", "type": "combining-mark" },
       { "label": "{", "val": "LRM", "class": "smaller" },
       { "label": "}", "val": "RLM", "class": "smaller" },
-      { "label": "|", "val": "ZWJ", "class": "smaller" }
+      { "label": "|", "val": "ZWJ", "class": "smaller backslash" }
     ],
     [
       { "label": "A", "val": "أ" },

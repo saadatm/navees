@@ -164,6 +164,10 @@ kbd {
     font-family: WorkSans, sans-serif;
 }
 
+.version-num {
+    color: #adadad;
+}
+
 ol {
     padding: 0 2em 0 0;
 }
@@ -580,6 +584,10 @@ footer p {
 
     .no-print {
         display: none;
+    }
+
+    .version-num {
+        color: #000;
     }
 
     html {

@@ -156,6 +156,10 @@ kbd {
     color: #adadad;
 }
 
+.version-num {
+    color: #adadad;
+}
+
 ol {
     padding: 0 0 0 1.5em;
 }
@@ -557,6 +561,10 @@ footer p {
 
     .no-print {
         display: none;
+    }
+
+    .version-num {
+        color: #000;
     }
 
     html {

@@ -11,7 +11,7 @@ const DEST = './build';
 
 // environment function for nunjucks
 var env = function(environment) {
-    environment.addGlobal('lang', 'ur');
+    environment.addGlobal('version', '1.1.0');
     environment.addGlobal('char_categories', {
         "alphabets": "آ ا أ ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں و ؤ ہ ۂ ۃ ھ ء ئ ی ے ۓ",
         "digits": "۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ 0 1 2 3 4 5 6 7 8 9",

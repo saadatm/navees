@@ -6,6 +6,7 @@ _Navees_ is a keyboard layout for Urdu, based on the [CRULP Urdu Phonetic Keyboa
 
 * Added `ؤ` (U+0624 ARABIC LETTER WAW WITH HAMZA ABOVE) at `AltGr`+`W`
 * Added `ۂ` (U+06C2 ARABIC LETTER HEH GOAL WITH HAMZA ABOVE) at `AltGr`+`O`
+* Added `ۓ` (U+06D3 ARABIC LETTER YEH BARREE WITH HAMZA ABOVE) at `AltGr`+`Y`
 * Added `أ` (U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE) at `AltGr`+`A`
 * Added `؍` (U+060D ARABIC DATE SEPARATOR) at `Shift` + `,`
 * Added `ZWNJ` (U+200C ZERO WIDTH NON-JOINER) at `Shift`+`Space`
@@ -17,6 +18,7 @@ _Navees_ is a keyboard layout for Urdu, based on the [CRULP Urdu Phonetic Keyboa
 * Added `$` (U+0024 DOLLAR SIGN) at `AltGr`+`$`
 * Added `^` (U+005E CIRCUMFLEX ACCENT) at `AltGr` + `^`
 * Moved `؂` (U+0602 ARABIC FOOTNOTE MARKER) from `AltGr`+`W` to `AltGr`+`F`
+* Moved `؁` (U+0601 ARABIC SIGN SANAH) from `AltGr`+`Y` to `AltGr`+`K`
 * Removed `ﷲ` (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) from `AltGr`+`A`
 
 ## Source

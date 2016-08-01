@@ -135,7 +135,7 @@
       { "label": "E", "val": "ٖ", "altval": "کھڑی زیر", "class": "larger", "type": "combining-mark" },
       { "label": "R", "val": "ؓ", "altval": "علامتِ رضی اللہ عنہ", "class": "larger", "type": "combining-mark" },
       { "label": "T", "val": "ؔ", "altval": "علامتِ تخلص", "class": "larger", "type": "combining-mark" },
-      { "label": "Y", "val": "؁", "altval": "علامتِ سنہ", "type": "sign" },
+      { "label": "Y", "val": "ۓ" },
       { "label": "U", "val": "ٔ", "altval": "بالائی ہمزہ", "class": "larger", "type": "combining-mark" },
       { "label": "I", "val": "ؑ", "altval": "علامتِ علیہ السلام", "class": "larger", "type": "combining-mark" },
       { "label": "O", "val": "ۂ" },
@@ -152,7 +152,7 @@
       { "label": "G", "val": "" },
       { "label": "H", "val": "ؒ", "altval": "علامتِ رحمۃ اللہ علیہ", "class": "larger", "type": "combining-mark" },
       { "label": "J", "val": "ﷻ", "class": "smaller" },
-      { "label": "K", "val": "" },
+      { "label": "K", "val": "؁", "altval": "علامتِ سنہ", "type": "sign" },
       { "label": "L", "val": "" },
       { "label": ";", "val": "" },
       { "label": "'", "val": "" }

@@ -129,7 +129,7 @@
           <div class="key larger"><span class="val">&#9676;ُ</span><span class="label">P</span> </div>
           <div class="key "><span class="val">{</span><span class="label">{</span> </div>
           <div class="key "><span class="val">}</span><span class="label">}</span> </div>
-          <div class="key "><span class="val">|</span><span class="label">|</span> </div>
+          <div class="key backslash"><span class="val">|</span><span class="label">|</span> </div>
         </div>
         <div class="row" dir="ltr">
           <div class="key capslock other"><span class="label">Caps Lock</span></div>
@@ -195,14 +195,14 @@
           <div class="key larger"><span class="val">&#9676;ٖ</span><span class="label">E</span> </div>
           <div class="key larger"><span class="val">&#9676;ؓ</span><span class="label">R</span> </div>
           <div class="key larger"><span class="val">&#9676;ؔ</span><span class="label">T</span> </div>
-          <div class="key "><span class="val">؁</span><span class="label">Y</span> </div>
+          <div class="key "><span class="val">ۓ</span><span class="label">Y</span> </div>
           <div class="key larger"><span class="val">&#9676;ٔ</span><span class="label">U</span> </div>
           <div class="key larger"><span class="val">&#9676;ؑ</span><span class="label">I</span> </div>
           <div class="key "><span class="val">ۂ</span><span class="label">O</span> </div>
           <div class="key larger"><span class="val">&#9676;ٗ</span><span class="label">P</span> </div>
           <div class="key smaller"><span class="val">LRM</span><span class="label">{</span> </div>
           <div class="key smaller"><span class="val">RLM</span><span class="label">}</span> </div>
-          <div class="key smaller"><span class="val">ZWJ</span><span class="label">|</span> </div>
+          <div class="key smaller backslash"><span class="val">ZWJ</span><span class="label">|</span> </div>
         </div>
         <div class="row" dir="ltr">
           <div class="key capslock other"><span class="label">Caps Lock</span></div>
@@ -213,7 +213,7 @@
           <div class="key "><span class="val"></span><span class="label">G</span> </div>
           <div class="key larger"><span class="val">&#9676;ؒ</span><span class="label">H</span> </div>
           <div class="key smaller"><span class="val">ﷻ</span><span class="label">J</span> </div>
-          <div class="key "><span class="val"></span><span class="label">K</span> </div>
+          <div class="key "><span class="val">؁</span><span class="label">K</span> </div>
           <div class="key "><span class="val"></span><span class="label">L</span> </div>
           <div class="key "><span class="val"></span><span class="label">;</span> </div>
           <div class="key "><span class="val"></span><span class="label">&#39;</span> </div>
@@ -248,8 +248,8 @@
       <h1>Install</h1>
       <h2>Windows</h2>
       <ol>
-        <li>Download the file <b>navees-windows.zip</b> from the <a href="https://github.com/saadatm/navees/releases/latest">latest release</a>.</li>
-        <li>Unzip the file, go inside the folder <b>installer</b>, and run <b>setup.exe</b>. The system will display a confirmation message after successful installation.</li>
+        <li>Download the file <b>navees-windows-&lt;version&gt;.zip</b> from the <a href="https://github.com/saadatm/navees/releases/latest">latest release</a> page.</li>
+        <li>Unzip the file, and run <b>navees-installer-&lt;version&gt;.exe</b>. Make sure that <b>Add to language bar list</b> is checked, and then click <b>Install</b>. The system will display a confirmation message after successful installation.</li>
         <li>A little button saying <strong class="all-sc">EN</strong> (or <strong class="all-sc">ENG</strong>) will appear on the taskbar (near the system tray/status area). Click it, and select <strong class="all-sc">UR</strong> (or <strong class="all-sc">URD</strong>).</li>
         <li>Type!</li>
       </ol>
@@ -260,6 +260,7 @@
       <ul class="ul no-print">
         <li>Added <strong class="ur">ؤ</strong> <span class="char-desc fade all-sc">(U+0624 ARABIC LETTER WAW WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>W</kbd></li>
         <li>Added <strong class="ur">ۂ</strong> <span class="char-desc fade all-sc">(U+06C2 ARABIC LETTER HEH GOAL WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>O</kbd></li>
+        <li>Added <strong class="ur">ۓ</strong> <span class="char-desc fade all-sc">(U+06D3 ARABIC LETTER YEH BARREE WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>Y</kbd></li>
         <li>Added <strong class="ur">أ</strong> <span class="char-desc fade all-sc">(U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>A</kbd></li>
         <li>Added <strong class="ur">؍</strong> <span class="char-desc fade all-sc">(U+060D ARABIC DATE SEPARATOR)</span> at <kbd>Shift</kbd> <span class="fade">+</span> <kbd>,</kbd></li>
         <li>Added <strong><a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">ZWNJ</a></strong> <span class="char-desc fade all-sc">(U+200C ZERO WIDTH NON-JOINER)</span> at <kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></li>
@@ -271,6 +272,7 @@
         <li>Added <strong>$</strong> <span class="char-desc fade all-sc">(U+0024 DOLLAR SIGN)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>$</kbd></li>
         <li>Added <strong>^</strong> <span class="char-desc fade all-sc">(U+005E CIRCUMFLEX ACCENT)</span> at <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>^</kbd></li>
         <li>Moved <strong class="ur">؂</strong> <span class="char-desc fade all-sc">(U+0602 ARABIC FOOTNOTE MARKER)</span> from <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>W</kbd> to <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>F</kbd></li>
+        <li>Moved <strong class="ur">؁</strong> <span class="char-desc fade all-sc">(U+0601 ARABIC SIGN SANAH)</span> from <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>Y</kbd> to <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>K</kbd></li>
         <li>Removed the ligature <strong class="ur">ﷲ</strong> <span class="char-desc fade all-sc">(U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM)</span> from <kbd>AltGr</kbd> <span class="fade">+</span> <kbd>A</kbd></li>
       </ul>
       <h2>Mappings</h2>
@@ -457,6 +459,10 @@
           <tr>
             <td><kbd>Y</kbd></td>
             <td>ے</td>
+          </tr>
+          <tr>
+            <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>Y</kbd></td>
+            <td>ۓ</td>
           </tr>
         </table>
       </div>
@@ -674,7 +680,7 @@
             <td dir="rtl">علامتِ شعر <span class="fade">&mdash;</span> ؎</td>
           </tr>
           <tr>
-            <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>Y</kbd></td>
+            <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>K</kbd></td>
             <td dir="rtl">علامتِ سنہ <span class="fade">&mdash;</span> ؁</td>
           </tr>
           <tr>
@@ -745,7 +751,7 @@
           </tr>
           <tr>
             <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>|</kbd></td>
-            <td class="smaller">ZWJ</td>
+            <td class="smaller backslash">ZWJ</td>
           </tr>
           <tr>
             <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>}</kbd></td>
@@ -777,7 +783,7 @@
           </tr>
           <tr>
             <td><kbd>Shift</kbd> <span class="fade">+</span> <kbd>|</kbd></td>
-            <td>|</td>
+            <td class="backslash">|</td>
           </tr>
           <tr>
             <td><kbd>AltGr</kbd> <span class="fade">+</span> <kbd>@</kbd></td>

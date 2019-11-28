@@ -1,10 +1,11 @@
-var autoprefixer = require('autoprefixer');
-var cssimport = require('postcss-import');
-var data = require('gulp-data');
-var gulp = require('gulp');
-var nunjucks = require('gulp-nunjucks-render');
-var postcss = require('gulp-postcss');
-var prettify = require('gulp-prettify');
+const { src, dest, series, parallel, watch } = require('gulp');
+const autoprefixer = require('autoprefixer');
+const cssimport = require('postcss-import');
+const data = require('gulp-data');
+const gulp = require('gulp');
+const nunjucks = require('gulp-nunjucks-render');
+const postcss = require('gulp-postcss');
+const prettify = require('gulp-prettify');
 
 const SRC = '.';
 const DEST = './build';
@@ -26,8 +27,8 @@ var env = function(environment) {
     
 }
 
-gulp.task('pages', function () {
-    return gulp.src([
+function pages () {
+    return src([
             SRC + '/pages/**/*.njk',
             '!' + SRC + '/pages/helpers/*.njk'
         ])
@@ -39,25 +40,26 @@ gulp.task('pages', function () {
             path: SRC + '/pages/'
         }))
         .pipe(prettify({indent_size: 2}))
-        .pipe(gulp.dest(DEST));
-});
+        .pipe(dest(DEST));
+}
 
-gulp.task('fonts', function() {
-    return gulp.src(SRC + '/assets/type/**/*')
-        .pipe(gulp.dest(DEST + '/assets/type'));
-});
+function fonts() {
+    return src(SRC + '/assets/type/**/*')
+        .pipe(dest(DEST + '/assets/type'));
+}
 
-gulp.task('css', function() {
+function css() {
     var processors = [
         cssimport(),
-        autoprefixer({
-            browsers: ['last 2 versions']
-        })
+        autoprefixer()
     ];
     
-    return gulp.src(SRC + '/assets/css/style*.css')
+    return src(SRC + '/assets/css/style*.css')
         .pipe(postcss(processors))
-        .pipe(gulp.dest(DEST + '/assets/css'));
-});
+        .pipe(dest(DEST + '/assets/css'));
+}
 
-gulp.task('default', ['css', 'fonts', 'pages']);
+exports.css = css;
+exports.fonts = fonts;
+exports.pages = pages;
+exports.default = series(css, fonts, pages);

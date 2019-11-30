@@ -15,7 +15,8 @@
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-postcss": "^8.0.0",
     "gulp-prettify": "^0.5.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "unicode": "^12.1.0"
   },
   "dependencies": {}
 }

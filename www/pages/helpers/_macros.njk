@@ -32,9 +32,9 @@
     <div class="key-group other">
         <div class="key alt other"><span class="label">Alt</span></div>
         {% if label == 'Shift' or label == 'شِفٹ' %}
-        <div class="key space other special"><span class="val">ZWNJ</span></div>
+        <div class="key space other special" title="U+200C ZERO WIDTH NON-JOINER"><span class="val">ZWNJ</span></div>
         {% else %}
-        <div class="key space other"><span class="val">وقفہ</span></div>
+        <div class="key space other" title="U+0020 SPACE"><span class="val">وقفہ</span></div>
         {% endif %}
         {% if label == 'AltGr' or label == 'آلٹ‌جی‌آر' %}
         <div class="key alt other highlighted"><span class="label">AltGr</span></div>
@@ -50,7 +50,7 @@
 <div class="row" dir="ltr">
     {{ drawLeftMiscKeys(rowNum, label) }}
     {%- for key in row -%}
-    <div class="key {{ key.class }}">
+    <div class="key{% if key.class %} {{ key.class }}{% endif %}" title="{{ key.val | uniname }}">
         {%- if key.type == 'combining-mark' -%}
         <span class="val">&#9676;{{ key.val }}</span>
         {%- else -%}
@@ -83,7 +83,7 @@
             {% if key.val == c %}
                 <tr>
                     <td>{% if prefix != '' %}<kbd>{{ prefix }}</kbd> <span class="fade">+</span> {% endif %}<kbd>{{ key.label }}</kbd></td>
-                    <td {% if key.altval -%}dir="rtl"{%- endif -%}{%- if key.class -%} class="{{ key.class }}"{%- endif -%}>
+                    <td {% if key.altval -%}dir="rtl"{%- endif -%}{%- if key.class -%} class="{{ key.class }}"{%- endif -%} title="{{ key.val | uniname }}">
                         {%- if key.type == 'combining-mark' -%}
                             {{ key.altval}} <span class="fade">&mdash;</span> &#9676;{{ key.val }}
                         {%- elif key.type == 'sign' -%}
@@ -103,7 +103,7 @@
             {% if c == 'ZWNJ' %}
             <tr>
                 <td><kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></td>
-                <td class="smaller">ZWNJ</td>
+                <td class="smaller" title="U+200C ZERO WIDTH NON-JOINER">ZWNJ</td>
             </tr>
             {% else %}
             {# Below is a wasteful way of doing things (because even if we find the c in the

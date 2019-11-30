@@ -146,11 +146,11 @@ kbd {
 }
 
 .fade {
-    color: #adadad;
+    color: #6f6f6f;
 }
 
 .version-num {
-    color: #adadad;
+    color: #6f6f6f;
 }
 
 ol {
@@ -270,7 +270,7 @@ nav li:last-child:after {
 }
 .key .label {
     font-family: WorkSans, sans-serif;
-    color: #8f8f8f;
+    color: #6f6f6f;
     display: none;
     font-size: 1rem;
     line-height: 1;
@@ -294,10 +294,10 @@ nav li:last-child:after {
     line-height: 2;
 }
 .key.highlighted {
-    background-color: rgba(55, 113, 200, 0.5);
+    background-color: #f2f2f2;
 }
 .key.highlighted .label {
-    color: #fff;
+    color: #333;
     font-weight: 600;
 }
 .key.override-font .val {

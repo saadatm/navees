@@ -478,24 +478,26 @@ nav li:last-child:after {
     line-height: 2;
     margin-bottom: 1.5rem;
 }
-.mapping-table  td {
+.mapping-table td {
     font-family: WorkSans, sans-serif;
     width: 50%;
     text-align: center;
+    padding: 0;
+    line-height: 2.5rem;
 }
 
 .mapping-table td:last-child {
     font-family: NotoNastaliqUrdu, WorkSans, sans-serif;
     font-size: 1.125rem;
-    position: relative;
-    top: -4px;
 }
-.mapping-table  td.override-font {
+
+.mapping-table td.override-font {
     font-family: WorkSans, sans-serif;
 }
 
-.mapping-table  td.smaller {
+.mapping-table td.smaller {
     font-size: 0.75em;
+    vertical-align: baseline;
 }
 
 @media (min-width: 480px) {

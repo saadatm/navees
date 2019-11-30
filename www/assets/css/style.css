@@ -103,14 +103,7 @@ section {
     margin: 4.5rem auto;
 }
 
-/* .container {
-    max-width: 640px;
-    width: 92.5%;
-    margin: 1.5rem auto;
-} */
-
 section.max {
-/* section.max .container { */
     max-width: 980px;
     width: 92.5%;
 }
@@ -176,10 +169,6 @@ ol {
     font-size: 1.2em;
     line-height: 0.52;
 }
-/* .ul  li:before {
-    margin-left: -0.75em;
-    content: "\2022";
-} */
 
 /* Header */
 header {
@@ -243,7 +232,6 @@ nav li:last-child:after {
 }
 
 /* Keyboard */
-/* section.keyboard { */
 .keyboard {
     margin: 0 0 3rem 0;
 }
@@ -530,12 +518,9 @@ nav li:last-child:after {
         flex: 1 0 auto;
         width: 38%;
         margin-top: 0;
-        /* padding-top: 0.5rem;
-        border-top: 1px solid #ccc; */
     }
     
     .mapping-table table {
-        /* margin-left: 20px; */
         flex: 1 0 auto;
         width: 62%;
     }

@@ -75,7 +75,7 @@
     [
       { "label": "Q", "val": "ْ", "altval": "جزم", "class": "larger", "type": "combining-mark" },
       { "label": "W", "val": "ّ", "altval": "تشدید", "class": "larger", "type": "combining-mark" },
-      { "label": "E", "val": "ٰ", "altval": "کھڑی زبر", "class": "larger", "type": "combining-mark" },
+      { "label": "E", "val": "ٰ", "altval": "کھڑا زبر", "class": "larger", "type": "combining-mark" },
       { "label": "R", "val": "ڑ" },
       { "label": "T", "val": "ٹ" },
       { "label": "Y", "val": "َ", "altval": "زبر", "class": "larger", "type": "combining-mark" },
@@ -108,8 +108,8 @@
       { "label": "B", "val": "" },
       { "label": "N", "val": "ں" },
       { "label": "M", "val": "٘", "altval": "علامتِ نون غنہ", "class": "larger", "type": "combining-mark" },
-      { "label": ",", "val": "؍" },
-      { "label": ".", "val": "٫" },
+      { "label": ",", "val": "؍", "altval": "علامتِ سکتہ برائے تاریخ", "type": "sign" },
+      { "label": ".", "val": "٫", "altval": "علامتِ اعشاریہ", "type": "sign" },
       { "label": "?", "val": "؟" }
     ]]
   },
@@ -132,14 +132,14 @@
     [
       { "label": "Q", "val": "" },
       { "label": "W", "val": "ؤ" },
-      { "label": "E", "val": "ٖ", "altval": "کھڑی زیر", "class": "larger", "type": "combining-mark" },
+      { "label": "E", "val": "ٖ", "altval": "کھڑا زیر", "class": "larger", "type": "combining-mark" },
       { "label": "R", "val": "ؓ", "altval": "علامتِ رضی اللّٰہ عنہ", "class": "larger", "type": "combining-mark" },
       { "label": "T", "val": "ؔ", "altval": "علامتِ تخلص", "class": "larger", "type": "combining-mark" },
       { "label": "Y", "val": "ۓ" },
       { "label": "U", "val": "ٔ", "altval": "بالائی ہمزہ", "class": "larger", "type": "combining-mark" },
       { "label": "I", "val": "ؑ", "altval": "علامتِ علیہ السلام", "class": "larger", "type": "combining-mark" },
       { "label": "O", "val": "ۂ" },
-      { "label": "P", "val": "ٗ", "altval": "الٹا پیش", "class": "larger", "type": "combining-mark" },
+      { "label": "P", "val": "ٗ", "altval": "اُلٹا پیش", "class": "larger", "type": "combining-mark" },
       { "label": "{", "val": "LRM", "class": "smaller" },
       { "label": "}", "val": "RLM", "class": "smaller" },
       { "label": "|", "val": "ZWJ", "class": "smaller backslash" }
@@ -158,7 +158,7 @@
       { "label": "'", "val": "" }
     ],
     [
-      { "label": "Z", "val": "؏", "altval": "علامتِ مصرعہ", "type": "sign" },
+      { "label": "Z", "val": "؏", "altval": "علامتِ مصرع", "type": "sign" },
       { "label": "X", "val": "؎", "altval": "علامتِ شعر", "type": "sign" },
       { "label": "C", "val": "؃", "altval": "علامتِ صفحہ", "type": "sign" },
       { "label": "V", "val": "" },

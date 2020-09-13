@@ -108,7 +108,7 @@
       { "label": "B", "val": "" },
       { "label": "N", "val": "ں" },
       { "label": "M", "val": "٘", "altval": "علامتِ نون غنہ", "class": "larger", "type": "combining-mark" },
-      { "label": ",", "val": "؍", "altval": "علامتِ سکتہ برائے تاریخ", "type": "sign" },
+      { "label": ",", "val": "؍", "altval": "علامتِ وقفہ برائے تاریخ", "type": "sign" },
       { "label": ".", "val": "٫", "altval": "علامتِ اعشاریہ", "type": "sign" },
       { "label": "?", "val": "؟" }
     ]]

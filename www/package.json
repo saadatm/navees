@@ -4,6 +4,7 @@
   "description": "Website for Navees, a phonetic keyboard layout for Urdu",
   "author": "Saadat Mateen",
   "license": "MIT",
+  "private": true,
   "browserslist": [
     "last 2 versions",
     "Firefox ESR"

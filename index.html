@@ -386,13 +386,63 @@
     </section>
     <section id="install" class="no-print">
       <h1>Install</h1>
-      <h2>Windows</h2>
-      <ol>
-        <li>Download the file <b>navees-windows-&lt;version&gt;.zip</b> from the <a href="https://github.com/saadatm/navees/releases/latest">latest release</a> page.</li>
-        <li>Unzip the file, and run <b>navees-installer-&lt;version&gt;.exe</b>. Make sure that <b>Add to language bar list</b> is checked, and then click <b>Install</b>. The system will display a confirmation message after successful installation.</li>
-        <li>A little button saying <strong class="all-sc">EN</strong> (or <strong class="all-sc">ENG</strong>) will appear on the taskbar (near the system tray/status area). Click it, and select <strong class="all-sc">UR</strong> (or <strong class="all-sc">URD</strong>).</li>
-        <li>Type!</li>
-      </ol>
+      <details>
+        <summary>
+          <h2>Windows</h2>
+        </summary>
+        <ol>
+          <li>Download the file <b>navees-windows-&lt;version&gt;.zip</b> from the <a href="https://github.com/saadatm/navees/releases/latest">latest release</a> page.</li>
+          <li>Unzip the file, and run <b>navees-installer-&lt;version&gt;.exe</b>. Make sure that <b>Add to language bar list</b> is checked, and then click <b>Install</b>. The system will display a confirmation message after successful installation.</li>
+          <li>A little button saying <strong class="all-sc">EN</strong> (or <strong class="all-sc">ENG</strong>) will appear on the taskbar&mdash;near the system tray/status area. (You may need to restart your computer before it appears.) Click it, and select <strong class="all-sc">UR</strong> (or <strong class="all-sc">URD</strong>).</li>
+          <li>Type!</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <h2>Linux</h2>
+        </summary>
+        <p><span class="swsh">Navees</span> is currently included in the following Linux distributions:</p>
+        <ul class="ul">
+          <li><a href="https://archlinux.org">Arch Linux</a></li>
+          <li><a href="https://getfedora.org/">Fedora 34</a></li>
+          <li><a href="https://manjaro.org/">Manjaro</a></li>
+        </ul>
+        <p>In order to enable <span class="swsh">Navees</span>, follow the instructions for your desktop environment below.</p>
+        <h3>GNOME 40</h3>
+        <ol>
+          <li>Open the Activities overview and start typing <b>Terminal</b>.</li>
+          <li> Click on <b>Terminal</b> to open a terminal window, and run the following command: <pre><code>gsettings set org.gnome.desktop.input-sources show-all-sources true</code></pre> (This is needed so that GNOME can load the &ldquo;extra&rdquo; keyboard layouts, in which <span class="swsh">Navees</span> is included.) </li>
+          <li>Open the Activities overview again and start typing <b>Settings</b>.</li>
+          <li>Click on <b>Settings</b>.</li>
+          <li>Click <b>Keyboard</b> in the sidebar.</li>
+          <li>In the <b>Input Sources</b> section, click the <b>+</b> button.</li>
+          <li>Click the <b>⋮</b> button and search for <b>Urdu</b>. Then select either <b>Urdu (Pakistan)</b> or <b>Urdu (India)</b>.</li>
+          <li>Select <b>Urdu (Navees)</b>, and click the <b>Add</b> button.</li>
+          <li>A layout indicator will appear in the top bar. Click it, and select <b>Urdu (Navees)</b>.</li>
+          <li>Type!</li>
+        </ol>
+        <h3>KDE Plasma 5</h3>
+        <ol>
+          <li>Go to <b>System Settings &gt; Input Devices &gt; Keyboard</b>, and click the <b>Layouts</b> tab.</li>
+          <li>Enable <b>Configure layouts</b> (if it is not already checked), then click the <b>Add</b> button.</li>
+          <li>In the <b>Limit selection by language</b> drop-down list, select <b>Urdu</b>.</li>
+          <li>In the <b>Layout</b> drop-down list, select either <b>Urdu (Pakistan)</b> or <b>Indian</b>.</li>
+          <li>In the <b>Variant</b> drop-down list, select either <b>Urdu (Navees, Pakistan)</b> or <b>Urdu (Navees)</b>.</li>
+          <li>Click <b>OK</b>, and then <b>Apply</b>.</li>
+          <li>A keyboard layout indicator will appear in the System Tray. Click it until it shows either <b>pk</b> or <b>in</b>.</li>
+          <li>Type!</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <h2>Android</h2>
+        </summary>
+        <p><span class="swsh">Navees</span> (adapted for mobile) is available in the following Android keyboards:</p>
+        <ul class="ul">
+          <li>Simple Keyboard (<a href="https://f-droid.org/packages/rkr.simplekeyboard.inputmethod/">F-Droid</a>, <a href="https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod">Google Play</a>)</li>
+          <li>Indic Keyboard (<a href="https://f-droid.org/en/packages/org.smc.inputmethod.indic/">F-Droid</a>, <a href="https://play.google.com/store/apps/details?id=org.smc.inputmethod.indic">Google Play</a>)</li>
+        </ul>
+      </details>
     </section>
     <section id="doc" class="doc">
       <h1 class="no-print">Documentation</h1>

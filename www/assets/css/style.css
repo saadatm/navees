@@ -58,13 +58,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: 1rem 0 0.5rem 0;
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin: 1rem 0 0.5rem 0;
+    font-feature-settings: "smcp", "c2sc";
+    letter-spacing: 0.5px;
 }
 
 strong, b {

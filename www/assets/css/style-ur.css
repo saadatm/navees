@@ -39,6 +39,14 @@ html {
          url("../type/NotoNastaliqUrdu-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: NotoNastaliqUrdu;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../type/NotoNastaliqUrdu-Bold.woff2") format("woff2"),
+         url("../type/NotoNastaliqUrdu-Bold.woff") format("woff");
+}
+
 html {
     box-sizing: border-box;
     font-size: 87.5%;
@@ -50,7 +58,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 0;
 }
 
@@ -59,12 +67,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: 1rem 0 0.5rem 0;
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin: 1rem 0 0.5rem 0;
 }
 

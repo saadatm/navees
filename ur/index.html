@@ -386,18 +386,18 @@
     </section>
     <section id="install" class="no-print">
       <h1>تنصیب</h1>
-      <details>
+      <details id="install-windows">
         <summary>
           <h2>وِنڈوز</h2>
         </summary>
         <ol>
           <li><a href="https://github.com/saadatm/navees/releases/latest">تازہ ترین ریلیز</a> کے صفحے پر جائیے، اور <b class="en" lang="en">navees-windows-&lt;version&gt;.zip</b> نامی فائل کو ڈاؤنلوڈ کیجیے۔</li>
           <li>فائل کو اَن زِپ کیجیے، اور <b class="en" lang="en">navees-installer-&lt;version&gt;.exe</b> کو چلائیے۔ یہ دیکھ لیجیے کہ <b dir="ltr" class="en" lang="en">Add to language bar list</b> کی آپشن فعال ہے، اور پھر <b dir="ltr" class="en" lang="en">Install</b> پر کلک کیجیے۔ کامیاب تنصیب کے بعد سسٹم ایک تصدیقی پیغام ظاہر کرے گا۔</li>
-          <li>ٹاسک‌بار میں (سسٹم ٹرے/سٹیٹس ایریا کے ساتھ) ایک ننھا سا بٹن نمودار ہو گا، جس پر <strong lang="en" class="en all-sc">EN</strong> (یا <strong lang="en" class="en all-sc">ENG</strong>) لکھا ہو گا۔ اس بٹن کو کلک کیجیے، اور <strong lang="en" class="en all-sc">UR</strong> (یا <strong lang="en" class="en all-sc">URD</strong>) کو منتخب کیجیے۔</li>
+          <li>ٹاسک‌بار میں (سسٹم ٹرے/سٹیٹس ایریا کے ساتھ) ایک ننھا سا بٹن نمودار ہو گا، جس پر <strong lang="en" class="en all-sc">EN</strong> (یا <strong lang="en" class="en all-sc">ENG</strong>) لکھا ہو گا۔ (اگر یہ بٹن ظاہر نہ ہو تو اپنے کمپیوٹر کو ری‌سٹارٹ کر کے دیکھیے۔) اس بٹن کو کلک کیجیے، اور <strong lang="en" class="en all-sc">UR</strong> (یا <strong lang="en" class="en all-sc">URD</strong>) کو منتخب کیجیے۔</li>
           <li>ٹائپ کیجیے!</li>
         </ol>
       </details>
-      <details>
+      <details id="install-linux">
         <summary>
           <h2>لینکس</h2>
         </summary>
@@ -406,13 +406,14 @@
           <li><a href="https://archlinux.org">آرچ لینکس</a></li>
           <li><a href="https://getfedora.org/">فیڈورا ۳۴</a></li>
           <li><a href="https://manjaro.org/">منجارو</a></li>
+          <li><a href="https://en.opensuse.org/Portal:Tumbleweed">اوپن‌سوزا ٹمبل‌وِیڈ</a></li>
         </ul>
         <p>نویس کو فعال کرنے کے لیے اپنی ڈیسکٹاپ انوائرنمنٹ کے ذیل میں موجود ہدایات پر عمل کیجیے۔</p>
         <h3>گنوم ۴۰</h3>
         <ol>
           <li><span dir="ltr" class="en" lang="en">Activities overview</span> میں جائیے اور <b dir="ltr" class="en" lang="en">Terminal</b> ٹائپ کرنا شروع کیجیے۔</li>
           <li>
-            <b dir="ltr" class="en" lang="en">Terminal</b> پر کلک کیجیے۔ ایک ٹرمینل وِنڈو کھلے گی، جس میں درج ذیل کمانڈ چلائیے: <pre dir="ltr" lang="en"><code>gsettings set org.gnome.desktop.input-sources show-all-sources true</code></pre> (یہ کرنا اس لیے ضروری ہے کیونکہ نویس کا اندراج &rdquo;اضافی&ldquo; کی‌بورڈ لے‌آؤٹس میں ہے، اور گنوم میں ایسے لے‌آؤٹس فعال کرنے کے لیے پہلے یہ کمانڈ چلانا پڑتی ہے۔) </li>
+            <b dir="ltr" class="en" lang="en">Terminal</b> پر کلک کیجیے۔ ایک ٹرمینل وِنڈو کھلے گی، جس میں درج ذیل کمانڈ چلائیے: <pre dir="ltr" lang="en"><code>gsettings set org.gnome.desktop.input-sources show-all-sources true</code></pre> (یہ کرنا اس لیے ضروری ہے تاکہ گنوم &rdquo;اضافی&ldquo; کی‌بورڈ لے‌آؤٹس کو لوڈ کر سکے؛ نویس کا اندراج بھی اضافی لے‌آؤٹس میں ہے۔) </li>
           <li><span dir="ltr" class="en" lang="en">Activities overview</span> میں دوبارہ جائیے اور <b dir="ltr" class="en" lang="en">Settings</b> ٹائپ کرنا شروع کیجیے۔</li>
           <li><b dir="ltr" class="en" lang="en">Settings</b> پر کلک کیجیے۔</li>
           <li>سائیڈ‌بار میں <b dir="ltr" class="en" lang="en">Keyboard</b> پر کلک کیجیے۔</li>
@@ -434,7 +435,7 @@
           <li>ٹائپ کیجیے!</li>
         </ol>
       </details>
-      <details>
+      <details id="install-android">
         <summary>
           <h2>اینڈروئیڈ</h2>
         </summary>

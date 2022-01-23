@@ -59,6 +59,11 @@ function fonts() {
         .pipe(dest(DEST + '/assets/type'));
 }
 
+function imgs() {
+    return src(SRC + '/assets/img/**/*')
+        .pipe(dest(DEST + '/assets/img'));
+}
+
 function css() {
     var processors = [
         cssimport(),
@@ -72,5 +77,6 @@ function css() {
 
 exports.css = css;
 exports.fonts = fonts;
+exports.imgs = imgs;
 exports.pages = pages;
-exports.default = series(css, fonts, pages);
+exports.default = series(css, fonts, imgs, pages);

@@ -87,6 +87,10 @@ b .en {
     font-weight: 600;
 }
 
+.strong {
+    font-weight: 700;
+}
+
 a {
     color: inherit;
     border-bottom: 2px solid #ccc;

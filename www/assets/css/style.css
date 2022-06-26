@@ -39,6 +39,14 @@ html {
          url("../type/NotoNastaliqUrdu-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: NotoNastaliqUrdu;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../type/NotoNastaliqUrdu-Bold.woff2") format("woff2"),
+         url("../type/NotoNastaliqUrdu-Bold.woff") format("woff");
+}
+
 html {
     box-sizing: border-box;
     font-size: 87.5%;
@@ -169,6 +177,10 @@ kbd {
 .ur {
     font-family: NotoNastaliqUrdu, WorkSans, sans-serif;
     line-height: 1;
+}
+
+strong.ur {
+    font-weight: 700;
 }
 
 .swsh {

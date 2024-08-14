@@ -10,15 +10,15 @@
     "Firefox ESR"
   ],
   "devDependencies": {
-    "@unicode/unicode-13.0.0": "^1.0.6",
-    "autoprefixer": "^10.2.6",
+    "@unicode/unicode-13.0.0": "^1.5.2",
+    "autoprefixer": "^10.4.20",
     "gulp": "^5.0.0",
     "gulp-data": "^1.3.1",
     "gulp-nunjucks-render": "^2.2.3",
-    "gulp-postcss": "^9.0.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-prettify": "^0.5.0",
-    "postcss": "^8.4.31",
-    "postcss-import": "^14.0.2"
+    "postcss": "^8.4.41",
+    "postcss-import": "^16.1.0"
   },
   "dependencies": {}
 }

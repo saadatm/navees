@@ -55,12 +55,12 @@ function pages () {
 }
 
 function fonts() {
-    return src(SRC + '/assets/type/**/*')
+    return src(SRC + '/assets/type/**/*', { encoding: false })
         .pipe(dest(DEST + '/assets/type'));
 }
 
 function imgs() {
-    return src(SRC + '/assets/img/**/*')
+    return src(SRC + '/assets/img/**/*', { encoding: false })
         .pipe(dest(DEST + '/assets/img'));
 }
 

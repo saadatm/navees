@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - '.github/workflows/build-and-deploy-site.yml'
       - 'www/**'
       - '!www/package*.json'
 

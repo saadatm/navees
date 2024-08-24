@@ -621,12 +621,6 @@ header img {
     max-width: 21rem;
 }
 
-.head-link {
-    border: 0;
-    pointer-events: none;
-    display: block;
-}
-
 nav {
     font-size: 0.85rem;
 }

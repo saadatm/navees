@@ -1,48 +1,48 @@
 {% macro drawLeftMiscKeys(rowNum, label) %}
     {% if rowNum == 1 %} {# tab #}
-        <div class="key tab other"><span class="label">Tab</span></div>
+        <div class="key tab other"><span class="label" lang="en">Tab</span></div>
     {% elif rowNum == 2 %} {# caps lock #}
-        <div class="key capslock other"><span class="label">Caps Lock</span></div>
+        <div class="key capslock other"><span class="label" lang="en">Caps Lock</span></div>
     {% elif rowNum == 3 %} {# left shift #}
         {% if label == 'Shift' or label == 'شِفٹ' %}
-        <div class="key lshift other highlighted"><span class="label">Shift</span></div>
+        <div class="key lshift other highlighted"><span class="label" lang="en">Shift</span></div>
         {% else %}
-        <div class="key lshift other"><span class="label">Shift</span></div>
+        <div class="key lshift other"><span class="label" lang="en">Shift</span></div>
         {% endif %}
     {% endif %}
 {% endmacro %}
 
 {% macro drawRightMiscKeys(rowNum, label) %}
     {% if rowNum == 0 %} {# backspace #}
-        <div class="key backspace other"><span class="label">Back&shy;space</span></div>
+        <div class="key backspace other"><span class="label" lang="en">Back&shy;space</span></div>
     {% elif rowNum == 2 %} {# enter #}
-        <div class="key return other"><span class="label">Enter</span></div>
+        <div class="key return other"><span class="label" lang="en">Enter</span></div>
     {% elif rowNum == 3 %} {# right shift #}
         {% if label == 'Shift' or label == 'شِفٹ' %}
-        <div class="key rshift other highlighted"><span class="label">Shift</span></div>
+        <div class="key rshift other highlighted"><span class="label" lang="en">Shift</span></div>
         {% else %}
-        <div class="key rshift other"><span class="label">Shift</span></div>
+        <div class="key rshift other"><span class="label" lang="en">Shift</span></div>
         {% endif %}
     {% endif %}
 {% endmacro %}
 
 {% macro drawLastRow(label) %}
 <div class="row last" dir="ltr">
-    <div class="key ctrl other"><span class="label">Ctrl</span></div>
+    <div class="key ctrl other"><span class="label" lang="en">Ctrl</span></div>
     <div class="key-group other">
-        <div class="key alt other"><span class="label">Alt</span></div>
+        <div class="key alt other"><span class="label" lang="en">Alt</span></div>
         {% if label == 'Shift' or label == 'شِفٹ' %}
-        <div class="key space other special" title="U+200C ZERO WIDTH NON-JOINER"><span class="val">ZWNJ</span></div>
+        <div class="key space other special" title="U+200C ZERO WIDTH NON-JOINER"><span class="val" lang="en">ZWNJ</span></div>
         {% else %}
-        <div class="key space other" title="U+0020 SPACE"><span class="val">وقفہ</span></div>
+        <div class="key space other" title="U+0020 SPACE"><span class="val" lang="ur" dir="rtl">وقفہ</span></div>
         {% endif %}
         {% if label == 'AltGr' or label == 'آلٹ‌جی‌آر' %}
-        <div class="key alt other highlighted"><span class="label">AltGr</span></div>
+        <div class="key alt other highlighted"><span class="label" lang="en">AltGr</span></div>
         {% else %}
-        <div class="key alt other"><span class="label">AltGr</span></div>
+        <div class="key alt other"><span class="label" lang="en">AltGr</span></div>
         {% endif %}
     </div>
-    <div class="key ctrl other"><span class="label">Ctrl</span></div>
+    <div class="key ctrl other"><span class="label" lang="en">Ctrl</span></div>
 </div>
 {% endmacro %}
 
@@ -50,13 +50,13 @@
 <div class="row" dir="ltr">
     {{ drawLeftMiscKeys(rowNum, label) }}
     {%- for key in row -%}
-    <div class="key{% if key.class %} {{ key.class }}{% endif %}" title="{{ key.val | uniname }}">
+    <div class="key{% if key.class %} {{ key.class }}{% endif %}"{% if key.val != "" %} title="{{ key.val | uniname }}"{% endif %}>
         {%- if key.type == 'combining-mark' -%}
-        <span class="val">&#9676;{{ key.val }}</span>
+        <span class="val" dir="rtl" lang="ur">&#9676;{{ key.val }}</span>
         {%- else -%}
-        <span class="val">{{ key.val }}</span>
+        <span class="val" {% if key.lang %}lang={{ key.lang }}{% else %}lang="ur" dir="rtl"{% endif %}>{{ key.val }}</span>
         {%- endif -%}
-        <span class="label">{{ key.label }}</span>
+        <span class="label" lang="en">{{ key.label }}</span>
     </div>
     {%- endfor -%}
     {{ drawRightMiscKeys(rowNum, label) }}
@@ -82,8 +82,8 @@
         {% for key in row %}
             {% if key.val == c %}
                 <tr>
-                    <td>{% if prefix != '' %}<kbd>{{ prefix }}</kbd> <span class="fade">+</span> {% endif %}<kbd>{{ key.label }}</kbd></td>
-                    <td {% if key.altval -%}dir="rtl"{%- endif -%}{%- if key.class -%} class="{{ key.class }}"{%- endif -%} title="{{ key.val | uniname }}">
+                    <td lang="en">{% if prefix != '' %}<kbd>{{ prefix }}</kbd> <span class="fade">+</span> {% endif %}<kbd>{{ key.label }}</kbd></td>
+                    <td {% if key.class -%} class="{{ key.class }}"{%- endif -%} title="{{ key.val | uniname }}" {% if key.lang %}lang={{ key.lang }}{% else %}dir="rtl" lang="ur"{% endif %}>
                         {%- if key.type == 'combining-mark' -%}
                             {{ key.altval}} <span class="fade">&mdash;</span> &#9676;{{ key.val }}
                         {%- elif key.type == 'sign' -%}
@@ -103,7 +103,7 @@
             {% if c == 'ZWNJ' %}
             <tr>
                 <td><kbd>Shift</kbd> <span class="fade">+</span> <kbd>Space</kbd></td>
-                <td class="smaller" title="U+200C ZERO WIDTH NON-JOINER">ZWNJ</td>
+                <td class="smaller" lang="en" title="U+200C ZERO WIDTH NON-JOINER">ZWNJ</td>
             </tr>
             {% else %}
             {# Below is a wasteful way of doing things (because even if we find the c in the

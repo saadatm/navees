@@ -26,8 +26,8 @@
       { "label": "I", "val": "ی" },
       { "label": "O", "val": "ہ" },
       { "label": "P", "val": "پ" },
-      { "label": "[", "val": "[", "class": "override-font" },
-      { "label": "]", "val": "]", "class": "override-font" },
+      { "label": "[", "val": "]", "class": "override-font" },
+      { "label": "]", "val": "[", "class": "override-font" },
       { "label": "\\", "val": "\\", "class": "backslash" }
     ],
     [
@@ -83,8 +83,8 @@
       { "label": "I", "val": "ِ", "altval": "زیر", "class": "larger", "type": "combining-mark" },
       { "label": "O", "val": "ۃ" },
       { "label": "P", "val": "ُ", "altval": "پیش", "class": "larger", "type": "combining-mark" },
-      { "label": "{", "val": "{" },
-      { "label": "}", "val": "}" },
+      { "label": "{", "val": "}" },
+      { "label": "}", "val": "{" },
       { "label": "|", "val": "|", "class": "backslash" }
     ],
     [
@@ -122,10 +122,10 @@
       { "label": "$", "val": "$" },
       { "label": "%", "val": "٪" },
       { "label": "^", "val": "^" },
-      { "label": "&", "val": "&" },
+      { "label": "&", "val": "&", "lang": "en" },
       { "label": "*", "val": "*" },
-      { "label": "(", "val": "(" },
-      { "label": ")", "val": ")" },
+      { "label": "(", "val": ")" },
+      { "label": ")", "val": "(" },
       { "label": "-", "val": "" },
       { "label": "+", "val": "" }
     ],
@@ -140,9 +140,9 @@
       { "label": "I", "val": "ؑ", "altval": "علامتِ علیہ السلام", "class": "larger", "type": "combining-mark" },
       { "label": "O", "val": "ۂ" },
       { "label": "P", "val": "ٗ", "altval": "اُلٹا پیش", "class": "larger", "type": "combining-mark" },
-      { "label": "{", "val": "LRM", "class": "smaller" },
-      { "label": "}", "val": "RLM", "class": "smaller" },
-      { "label": "|", "val": "ZWJ", "class": "smaller backslash" }
+      { "label": "{", "val": "LRM", "class": "smaller", "lang": "en" },
+      { "label": "}", "val": "RLM", "class": "smaller", "lang": "en" },
+      { "label": "|", "val": "ZWJ", "class": "smaller backslash", "lang": "en" }
     ],
     [
       { "label": "A", "val": "أ" },
@@ -165,8 +165,8 @@
       { "label": "B", "val": "﷽", "class": "smaller" },
       { "label": "N", "val": "؀", "altval": "علامتِ ہندسہ", "type": "sign" },
       { "label": "M", "val": "" },
-      { "label": "<", "val": "<" },
-      { "label": ">", "val": ">" },
+      { "label": "<", "val": ">" },
+      { "label": ">", "val": "<" },
       { "label": "?", "val": "" }
     ]]
   }
